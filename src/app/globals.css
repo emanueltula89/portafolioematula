@@ -1,0 +1,400 @@
+:root {
+  --background-start: #0f172a;
+  --background-end: #1e293b;
+  --text-title: #ffffff;
+  --text-subtitle: #e2e8f0;
+  --text-body: #94a3b8;
+  --primary-color: #3b82f6;
+  --accent-color: #60a5fa;
+  --card-bg: rgba(30, 41, 59, 0.7);
+  --card-border: rgba(148, 163, 184, 0.1);
+  --border-radius: 12px;
+}
+
+html {
+  background-color: var(--background-start);
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body {
+  background: linear-gradient(135deg, var(--background-start) 0%, var(--background-end) 100%);
+  color: var(--text-body);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  overscroll-behavior: none;
+  /* Opcional: evita el rebote si se prefiere */
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-title) !important;
+}
+
+p,
+li,
+span,
+small {
+  color: var(--text-body);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: var(--text-title);
+}
+
+.text-muted {
+  color: var(--text-body) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--text-body) !important;
+}
+
+.text-title {
+  color: var(--text-title) !important;
+}
+
+.text-subtitle {
+  color: var(--text-subtitle) !important;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+  background-color: transparent !important;
+}
+
+.bg-light,
+.bg-white {
+  background-color: transparent !important;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border) !important;
+  border-radius: var(--border-radius) !important;
+  color: var(--text-body);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card:hover {
+  border-color: var(--primary-color) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card-title {
+  color: var(--text-title) !important;
+  font-weight: 700;
+}
+
+.card-text {
+  color: var(--text-secondary) !important;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(15, 23, 42, 0.8) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: var(--text-title) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--text-secondary) !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Tabs */
+.nav-pills .nav-link {
+  color: var(--text-secondary) !important;
+  border-radius: var(--border-radius);
+  transition: all 0.2s;
+}
+
+.nav-pills .nav-link:hover {
+  color: var(--text-title) !important;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.fw-bold {
+  color: var(--text-title) !important;
+  background-color: transparent !important;
+  border-bottom: 3px solid var(--primary-color);
+  border-radius: 0;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-outline-secondary {
+  color: var(--text-secondary);
+  border-color: var(--text-secondary);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--text-secondary);
+  color: var(--background-start);
+}
+
+/* Experience Timeline */
+h2 {
+  font-size: 2rem;
+  color: var(--text-title) !important;
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.experience-item {
+  border-left: 2px solid var(--card-border);
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* List Groups */
+.list-group-item {
+  background-color: transparent !important;
+  border-color: var(--card-border) !important;
+  color: var(--text-body);
+}
+
+/* Footer */
+footer {
+  background-color: rgba(15, 23, 42, 0.95) !important;
+  border-top: 1px solid var(--card-border) !important;
+}
+
+/* Print Styles - Native CSS Printing */
+.printable-cv-wrapper {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  /* Ocultar todo el contenido NO imprimible sacándolo del flujo */
+  body>*:not(main),
+  main>*:not(.printable-cv-wrapper) {
+    display: none !important;
+  }
+
+  /* Reset html/body/main to allow multi-page and visible flow */
+  html,
+  body,
+  main {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    min-height: 100% !important;
+    overflow: visible !important;
+    display: block !important;
+    visibility: visible !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Show only the printable CV content */
+  .printable-cv-wrapper {
+    display: block !important;
+    visibility: visible !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    background-color: #ffffff !important;
+    z-index: 9999 !important;
+  }
+
+  .printable-cv-wrapper * {
+    visibility: visible !important;
+  }
+
+  #printable-cv {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Typography Overrides for Print - Compact & 11pt */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .text-title {
+    color: #000000 !important;
+    text-shadow: none !important;
+    margin-bottom: 0.2rem !important;
+    /* Compactar títulos */
+  }
+
+  h1 {
+    font-size: 18pt !important;
+    /* Reducido de 24pt */
+    margin-bottom: 0.5rem !important;
+  }
+
+  h2 {
+    font-size: 14pt !important;
+    /* Reducido de 18pt */
+    margin-top: 1rem !important;
+    /* Menos espacio antes de sección */
+    margin-bottom: 0.5rem !important;
+    border-bottom: 1px solid #000 !important;
+    padding-bottom: 0.1rem !important;
+  }
+
+  h4 {
+    font-size: 11pt !important;
+    /* Reducido de 14pt */
+    font-weight: bold !important;
+    color: #000 !important;
+  }
+
+  /* Base font size 11pt and compact spacing */
+  body,
+  p,
+  li,
+  span,
+  small,
+  .text-body,
+  .text-muted,
+  .text-subtitle,
+  .card-text {
+    color: #000000 !important;
+    font-size: 11pt !important;
+    line-height: 1.3 !important;
+    /* Interlineado más compacto */
+  }
+
+  .text-subtitle,
+  small {
+    font-size: 10pt !important;
+    /* Subtítulos un poco más chicos */
+    color: #444 !important;
+  }
+
+  /* Remove card styling, just show structure - Ultra Compact */
+  .card {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #000000 !important;
+    margin-bottom: 0.5rem !important;
+    /* Menos margen entre items */
+    break-inside: avoid;
+  }
+
+  .card-body {
+    padding: 0 !important;
+  }
+
+  /* Compact lists */
+  ul {
+    margin-bottom: 0 !important;
+    padding-left: 1.2rem !important;
+  }
+
+  li {
+    margin-bottom: 0.1rem !important;
+  }
+
+  /* Enhance Grid */
+  .row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-bottom: 0 !important;
+  }
+
+  .col-md-6 {
+    width: 50% !important;
+    float: left;
+    padding: 0 0.5rem !important;
+  }
+
+  .badge {
+    border: 1px solid #000;
+    color: #000 !important;
+    background: transparent !important;
+    font-size: 9pt !important;
+    padding: 2px 4px !important;
+  }
+
+  /* Reduce page margins slightly to fit more */
+  @page {
+    margin: 10mm;
+  }
+
+  /* Hide UI elements just in case */
+  .btn,
+  .nav,
+  .navbar,
+  footer {
+    display: none !important;
+  }
+}
