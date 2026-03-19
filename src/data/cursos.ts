@@ -13,7 +13,7 @@ export const cursosData: Curso[] = [
   },
   {
     description: "Curso Internacional ¨ Gestión en Protección contra Incendios Forestales¨.",
-    institution: "Corporación Nacional Forestal. CONAF. Agencia de Cooperación Internacional AGCIDD y JICA. Santiago de Chile",
+    institution: "JICA- Japón. CONAF. Santiago de Chile",
     year: "2019",
   },
   {
