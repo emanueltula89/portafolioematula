@@ -19,5 +19,11 @@ export const projectsData: Project[] = [
     description: "Plataforma avanzada de monitoreo en tiempo real impulsada por Inteligencia Artificial para la gestión y análisis de datos en San Martín de los Andes. Optimización de procesos mediante el procesamiento inteligente de información en vivo.",
     link: "https://monitor-ia-sma.onrender.com/",
     buttonText: "Visitar Proyecto"
+  },
+  {
+    name: "Plataforma Monitoreo ANP Costero Villa Traful",
+    description: "Plataforma Reserva Urbana Costera Villa Traful. Proyecto de digitalización y monitoreo para la gestión ambiental y el análisis de información en tiempo real.",
+    link: "https://plataforma-traful-area-costero.onrender.com/",
+    buttonText: "Visitar Proyecto"
   }
 ];
