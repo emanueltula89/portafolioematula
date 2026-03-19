@@ -13,9 +13,9 @@ const Publicaciones = () => {
                 <div key={index} className="list-group-item p-4 border-bottom">
                   <div className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
                     <div className="mb-3 mb-md-0 me-md-4">
-                      <p className="mb-1 fw-bold text-title">{item.title}</p>
-                      <small className="text-subtitle">
-                        {item.venue} <span className="text-title fw-bold">• {item.year}</span>
+                      <p className="mb-1 fw-bold text-white">{item.title}</p>
+                      <small className="text-secondary">
+                        {item.venue} <span className="text-white-50 fw-bold">• {item.year}</span>
                       </small>
                     </div>
                     {item.link && (

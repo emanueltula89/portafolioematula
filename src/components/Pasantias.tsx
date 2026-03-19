@@ -13,9 +13,9 @@ const Pasantias = () => {
                 <div key={index} className="col-md-6 mb-4">
                   <div className="card h-100 border-0 shadow-sm">
                     <div className="card-body">
-                      <p className="mb-2 fw-medium text-title">{item.description}</p>
+                      <p className="mb-2 fw-medium text-white">{item.description}</p>
                       <div className="d-flex justify-content-between align-items-center mt-3">
-                        <small className="text-muted">{item.institution}</small>
+                        <small className="text-secondary">{item.institution}</small>
                         <span className="badge bg-primary rounded-pill">{item.year}</span>
                       </div>
                     </div>

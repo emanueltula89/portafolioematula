@@ -11,9 +11,9 @@ const Investigacion = () => {
             <div className="list-group list-group-flush">
               {investigacionData.map((item, index) => (
                 <div key={index} className="list-group-item p-4 border-bottom">
-                  <p className="mb-1 fw-medium lead text-title" style={{ fontSize: '1.1rem' }}>{item.description}</p>
-                  <small className="fw-bold text-subtitle">
-                    {item.institution} {item.year && <span className="text-title fw-bold">• {item.year}</span>}
+                  <p className="mb-1 fw-medium lead text-white" style={{ fontSize: '1.1rem' }}>{item.description}</p>
+                  <small className="fw-bold text-secondary">
+                    {item.institution} {item.year && <span className="text-white-50 fw-bold">• {item.year}</span>}
                   </small>
                 </div>
               ))}
