@@ -8,7 +8,7 @@ interface Pasantia {
 export const pasantiasData: Pasantia[] = [
   {
     description: "Práctica Internacional en Central Tecnológica de Despacho y Coordinación de medios aéreos. Tecnología aplicada, simulación y coordinación.",
-    institution: "CONAF. Santiago de Chile",
+    institution: "CONAF. CHILE",
     year: "2024",
   },
   {
