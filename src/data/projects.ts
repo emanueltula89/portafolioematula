@@ -25,5 +25,11 @@ export const projectsData: Project[] = [
     description: "Plataforma Reserva Urbana Costera Villa Traful. Proyecto de digitalización y monitoreo para la gestión ambiental y el análisis de información en tiempo real.",
     link: "https://plataforma-traful-area-costero.onrender.com/",
     buttonText: "Visitar Proyecto"
+  },
+  {
+    name: "Monitoreo Geospacial Inteligente de la Provincia de Neuquén",
+    description: "Plataforma avanzada de monitoreo geoespacial inteligente para la Provincia de Neuquén, integrando datos en tiempo real para la gestión territorial y ambiental.",
+    link: "https://geospacialnqn-f.onrender.com/",
+    buttonText: "Visitar Proyecto"
   }
 ];
