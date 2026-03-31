@@ -66,47 +66,42 @@ const TabsContainer = () => {
                 <ul className="nav nav-pills nav-fill mb-4 p-2">
                     <li className="nav-item">
                         <button
-                            className={`nav-link ${activeTab === 'experience' ? 'fw-bold' : 'text-muted'}`}
+                            className={`nav-link rounded-0 ${activeTab === 'experience' ? 'active' : ''}`}
                             onClick={() => setActiveTab('experience')}
-                            style={activeTab === 'experience' ? { color: '#f8fafc', borderBottom: '3px solid var(--primary-color)', borderRadius: '0', backgroundColor: 'transparent' } : {}}
                         >
-                            Experiencia
+                            [ EXPERIENCIA ]
                         </button>
                     </li>
                     <li className="nav-item">
                         <button
-                            className={`nav-link ${activeTab === 'education' ? 'fw-bold' : 'text-muted'}`}
+                            className={`nav-link rounded-0 ${activeTab === 'education' ? 'active' : ''}`}
                             onClick={() => setActiveTab('education')}
-                            style={activeTab === 'education' ? { color: '#f8fafc', borderBottom: '3px solid var(--primary-color)', borderRadius: '0', backgroundColor: 'transparent' } : {}}
                         >
-                            Formación y Antecedentes
+                            [ FORMACIÓN ]
                         </button>
                     </li>
                     <li className="nav-item">
                         <button
-                            className={`nav-link ${activeTab === 'projects' ? 'fw-bold' : 'text-muted'}`}
+                            className={`nav-link rounded-0 ${activeTab === 'projects' ? 'active' : ''}`}
                             onClick={() => setActiveTab('projects')}
-                            style={activeTab === 'projects' ? { color: '#f8fafc', borderBottom: '3px solid var(--primary-color)', borderRadius: '0', backgroundColor: 'transparent' } : {}}
                         >
-                            Proyectos
+                            [ PROYECTOS ]
                         </button>
                     </li>
                     <li className="nav-item">
                         <button
-                            className={`nav-link ${activeTab === 'skills' ? 'fw-bold' : 'text-muted'}`}
+                            className={`nav-link rounded-0 ${activeTab === 'skills' ? 'active' : ''}`}
                             onClick={() => setActiveTab('skills')}
-                            style={activeTab === 'skills' ? { color: '#f8fafc', borderBottom: '3px solid var(--primary-color)', borderRadius: '0', backgroundColor: 'transparent' } : {}}
                         >
-                            Habilidades Tecnológicas
+                            [ HABILIDADES ]
                         </button>
                     </li>
                     <li className="nav-item">
                         <button
-                            className={`nav-link ${activeTab === 'contact' ? 'fw-bold' : 'text-muted'}`}
+                            className={`nav-link rounded-0 ${activeTab === 'contact' ? 'active' : ''}`}
                             onClick={() => setActiveTab('contact')}
-                            style={activeTab === 'contact' ? { color: '#f8fafc', borderBottom: '3px solid var(--primary-color)', borderRadius: '0', backgroundColor: 'transparent' } : {}}
                         >
-                            Contacto
+                            [ CONTACTO ]
                         </button>
                     </li>
                 </ul>

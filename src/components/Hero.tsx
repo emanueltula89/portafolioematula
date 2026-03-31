@@ -7,16 +7,17 @@ interface HeroProps {
 
 const Hero = ({ isPrintable = false }: HeroProps) => {
   return (
-    <section id="hero" className="d-flex align-items-center justify-content-center text-center" style={{ minHeight: isPrintable ? 'auto' : '60vh', paddingTop: isPrintable ? '0' : '80px' }}>
-      <div className="container">
-        <h1 className="display-3 fw-bold mb-3 text-title">
-          {personalData.name}
+    <section id="hero" className="d-flex align-items-center justify-content-center text-center position-relative" style={{ minHeight: isPrintable ? 'auto' : '40vh', paddingTop: isPrintable ? '0' : '40px' }}>
+      <div className="container z-1">
+        <h1 className="display-4 fw-bold mb-3 text-title" style={{ textShadow: "0 0 10px var(--primary-color)" }}>
+          &gt; {personalData.name.toUpperCase()} <span className="cursor-blink">_</span>
         </h1>
-        <p className="lead fs-3 mb-2 text-subtitle">
-          {personalData.title}
+        <p className="lead fs-4 mb-2 text-subtitle" style={{ letterSpacing: "2px" }}>
+          [ ROLE: {personalData.title.toUpperCase()} ]
         </p>
-        <p className="fs-4 text-subtitle fst-italic">
-          "Tecnología de Información"
+        <p className="fs-5 text-primary mt-3">
+          <span className="badge border border-primary text-primary rounded-0 me-2" style={{ backgroundColor: 'transparent' }}>STATUS: ONLINE</span>
+          <span className="badge border border-primary text-primary rounded-0" style={{ backgroundColor: 'transparent' }}>CLEARANCE: LEVEL 5</span>
         </p>
       </div>
     </section>
