@@ -31,5 +31,11 @@ export const projectsData: Project[] = [
     description: "Plataforma avanzada de monitoreo geoespacial inteligente para la Provincia de Neuquén, integrando datos en tiempo real para la gestión territorial y ambiental.",
     link: "https://geospacialnqn-f.onrender.com/",
     buttonText: "Visitar Proyecto"
+  },
+  {
+    name: "Vaca Muerta Connect",
+    description: "Tablero táctico avanzado para el monitoreo en tiempo real de operaciones en Vaca Muerta. Integra fuentes de datos autenticadas e indicadores operativos precisos, diseñado con una estética corporativa profesional para garantizar la total transparencia e integridad de la información.",
+    link: "https://vaca-muerta-dashboard.onrender.com/",
+    buttonText: "Visitar Proyecto"
   }
 ];
